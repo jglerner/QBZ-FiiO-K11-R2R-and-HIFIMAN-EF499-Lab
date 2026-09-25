@@ -1,6 +1,6 @@
 # Linux Sound — SER 9 listening setup
 
-Repository: `jglerner/QBZ-Fiio-K2-R2R-amd-HIFIMAN-E499-Lab` — local copy on the SER 9: `~/Programs/Linux Sound`
+Repository: `jglerner/QBZ-FiiO-K11-R2R-and-HIFIMAN-EF499-Lab` — local copy on the SER 9: `~/Programs/Linux Sound`
 
 Goal: **quality over volume** — classical music, absolute fidelity, and (later) the
 sensation of being in a real concert hall on open headphones.
