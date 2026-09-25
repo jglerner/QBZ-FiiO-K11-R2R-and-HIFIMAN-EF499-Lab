@@ -11,7 +11,7 @@ Card **numbers** can change between boots — always refer to cards by **name**
 | OS | Debian GNU/Linux 13 (trixie) | `/etc/os-release` |
 | Kernel | 6.12.107+deb13-amd64 | `uname -r` |
 | Sound server | PipeWire 1.4.2 (pulse compatibility) | `pactl info` |
-| Session manager | WirePlumber 0.5.x (Lua configs not supported) | journal |
+| Session manager | WirePlumber **0.5.8** (Lua configs not supported) | `wireplumber --version` (snapshot 2026-09-25_142015) |
 | EasyEffects | 7.2.3, native Debian package (`/usr/bin/easyeffects`) | `easyeffects --version` |
 | QBZ | 2.1.2, Flatpak `com.blitzfc.qbz`, system install, flathub | `flatpak list` |
 | Desktop | GNOME (Wayland) | screenshots |
@@ -43,8 +43,9 @@ Card **numbers** can change between boots — always refer to cards by **name**
 - USB formats include **DSD_U32_BE (native DSD)** (`grep -i dsd /proc/asound/R2R/stream0`, 2026-09-25).
 - Outputs: **PO** (phone out: 6.35 mm, 4.4 mm balanced, 3.5 mm via adapter) and **LO SE** (RCA line out).
 - In LO mode the volume is **fixed at 99** (line level) — volume is set on the device that follows (TOMATE).
+- USB playback formats: **S16_LE, S24_3LE, S32_LE, DSD_U32_BE** (snapshot 2026-09-25_142015, `stream-fiio.txt`)
+- USB rates: **44100, 48000, 88200, 96000, 176400, 192000, 352800, 384000** (higher than the EF499, which stops at 192000)
 - Verified at 96 kHz and 192 kHz from QBZ (2026-09-25).
-- Supported rate list not yet captured → `scripts/snapshot.sh` records it (`stream-fiio.txt`).
 
 ## Headphones and speakers
 

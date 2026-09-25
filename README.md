@@ -39,8 +39,9 @@ Player: **QBZ** (Qobuz client, Flatpak `com.blitzfc.qbz`), streaming quality **H
 | TOMATE plays (via FiiO LO) | ✅ verified |
 | Both USB DACs on `analog-stereo` profile (not `iec958`) | ✅ verified, survives logout — ⏳ reboot not yet verified |
 | QBZ → EF499 at the album's native rate (192k and 44.1k seen) | ✅ verified (through PipeWire, no resampling) |
-| QBZ **exclusive / hw** mode (bypass PipeWire) | ❌ not working yet — see `docs/qbz.md` |
-| EasyEffects "HD650 – Base" (AutoEQ + crossfeed) | ⏳ not started |
+| All DAC system volumes 100 %, nothing monitoring the DACs | ✅ snapshot 2026-09-25_142015 |
+| QBZ **exclusive / hw** mode (bypass PipeWire) | ❌ not working yet (log still `plugin: Pcm`, `exclusive: false`) — see `docs/qbz.md` |
+| EasyEffects "HD650 – Base" (AutoEQ + crossfeed) | ⏳ not started — older HD650 presets exist, see `docs/findings.md` #9 |
 | Hall presets (Chamber / Opera house / Concert hall) | ⏳ not started |
 
 ## Rules that keep it bit-perfect

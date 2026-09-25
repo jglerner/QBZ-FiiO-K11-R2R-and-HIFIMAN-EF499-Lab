@@ -14,8 +14,9 @@
 
 - [ ] QBZ exclusive/hw mode (`docs/qbz.md`): plugin **hw**, Exclusive **on**, Reserve **on**, verify owner_pid.
 - [ ] Confirm profiles survive a **reboot** (`pactl list short sinks` → both `analog-stereo`).
-- [ ] Decide on `config-optional/.../20-gnome-settings-passive.conf` (test, then keep or delete).
-- [ ] Capture FiiO rate list (`state/*/stream-fiio.txt`).
+- [ ] Decide on `config-optional/.../20-gnome-settings-passive.conf` (not applied yet; test, then keep or delete).
+- [x] Capture FiiO rate list — 44.1k…384k, S16/S24_3LE/S32/DSD (snapshot 2026-09-25_142015).
+- [ ] Review the existing EasyEffects presets/IRs (findings #9): which HD650 preset was used, what to keep.
 
 ## Step 1 — EasyEffects "HD650 – Base"
 

@@ -40,6 +40,8 @@ Each entry: **symptom → root cause → fix → verification**. Newest last.
   `default-profile` state file moved to `backup-2026-09-25/`.
 - **Verified:** both sinks `...analog-stereo`, descriptions "HIFIMAN EF499 (HD650)" / "FiiO K11 R2R (...)" loaded;
   **survived logout/login**. ⏳ Survive **reboot**: not yet verified.
+- Snapshot 2026-09-25_142015: both cards `Active Profile: output:analog-stereo`. WirePlumber re-created
+  `~/.local/state/wireplumber/default-profile` at 12:50 — expected; with `auto-profile = false` our rule wins.
 
 ## 5. EasyEffects appeared and took over (2026-09-25)
 
@@ -54,7 +56,8 @@ Each entry: **symptom → root cause → fix → verification**. Newest last.
   (`pw-link -l`: `...HIFIMAN...:monitor_FL |-> GNOME Settings:input_FL`). The DAC was never idle
   ("IDLE" instead of "SUSPENDED"), and PipeWire only changes a device's rate when nothing is using it.
 - **Fix:** close GNOME Settings while listening.
-  Optional rule proposed: `config-optional/pipewire/pipewire-pulse.conf.d/20-gnome-settings-passive.conf` — **not confirmed applied or tested.**
+  Optional rule proposed: `config-optional/pipewire/pipewire-pulse.conf.d/20-gnome-settings-passive.conf` —
+  **confirmed NOT applied** (snapshot 2026-09-25_142015: no `~/.config/pipewire/pipewire-pulse.conf.d/` on the machine). Untested.
 - **Verified:** with Settings closed → HIFIMAN SUSPENDED when idle; QBZ Ashkenazy (24/192) → `rate: 192000`;
   next CD-quality album → `rate: 44100`. Rate follows the album.
 - Note: the Ashkenazy *Rachmaninov 24 Preludes* album is served by Qobuz as **24-bit/192 kHz**
@@ -69,8 +72,24 @@ See `docs/qbz.md` for the full log excerpt. Summary:
 - Flatpak permission fixed: `org.freedesktop.ReserveDevice1.*=own`.
 - Next step: set ALSA plugin **hw** + Exclusive **on** + Reserve **on**, screenshot, restart QBZ, verify.
 
+## 8. Default output is the HIFIMAN, not the FiiO (2026-09-25) — by choice
+
+- Snapshot 2026-09-25_142015: `pactl get-default-sink` → HIFIMAN EF499.
+- `priority.session` in `51-output-priorities.conf` only decides when **no choice is remembered**; WirePlumber keeps the
+  last default chosen by the user in `~/.local/state/wireplumber/default-nodes`. Not a problem — just know it.
+
+## 9. Earlier EasyEffects work already on the machine (found 2026-09-25)
+
+Snapshot `ee-presets.txt` shows presets and impulse responses from June–August 2026, before this project:
+- Output presets include **`HD650_Classical_v1.json`**, **`Sennheiser_HD650.json`**, `ath.json`, `ATH-M50x-Classical-v1.json`,
+  `Audio-Technica ATH-AD500X.json`, `DT770Pro80Ohm.json`, `classical-max/min.json`, and community presets (Perfect EQ, Dolby Atmos, …).
+- `~/.config/easyeffects/irs/` holds 27 IRs: headphone "virtualizer" IRs (Accudio, Razor Surround, Dolby ATMOS, MaxxAudio, X-Fi, Beats),
+  one `20260818.irs`, and a **96 MB** sound-effect IR ("Large Metal Gate … LOOP") that is not a room response.
+- None of them is a real concert-hall IR. Open question for the user: what are `HD650_Classical_v1` and `Sennheiser_HD650`, and keep or retire them?
+
 ## Minor
 
 - `xdg-desktop-portal: Caught PipeWire error: connection error` — only after PipeWire restarts; harmless.
-- UGREEN camera mic uses profile `iec958-stereo` input and dropped off USB twice — unrelated, not fixed.
+- UGREEN camera mic dropped off USB twice (unrelated). Its profile was `iec958-stereo` in the morning, `analog-stereo` in snapshot 2026-09-25_142015.
+- Journal: `DmaBufAllocator … Could not open any dma-buf provider` from wireplumber's libcamera monitor — camera-related, harmless for audio.
 - Two stray files `~/QBZ` and `~/Askenazy` were created by a typo (`echo > ...`) — safe to delete.
