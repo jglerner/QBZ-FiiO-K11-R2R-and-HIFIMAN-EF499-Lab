@@ -1,0 +1,14 @@
+$ flatpak info --show-permissions com.blitzfc.qbz
+[Context]
+shared=network;ipc;
+sockets=wayland;pulseaudio;fallback-x11;
+devices=all;
+filesystems=xdg-run/pipewire-0;xdg-run/app/com.discordapp.Discord:create;xdg-music;xdg-config/kdeglobals:ro;xdg-run/discord-ipc-0;
+
+[Session Bus Policy]
+com.canonical.AppMenu.Registrar=talk
+org.kde.kconfig.notify=talk
+org.kde.KGlobalSettings=talk
+org.kde.StatusNotifierWatcher=talk
+org.freedesktop.ReserveDevice1.*=own
+org.freedesktop.secrets=talk

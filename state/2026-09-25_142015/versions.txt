@@ -1,0 +1,9 @@
+$ sh -c pipewire --version; wireplumber --version; easyeffects --version 2>/dev/null; flatpak list --app --columns=application,version | grep -iE "qbz|easy"
+pipewire
+Compiled with libpipewire 1.4.2
+Linked with libpipewire 1.4.2
+wireplumber
+Compiled with libwireplumber 0.5.8
+Linked with libwireplumber 0.5.8
+easyeffects version: 7.2.3
+com.blitzfc.qbz	2.1.2

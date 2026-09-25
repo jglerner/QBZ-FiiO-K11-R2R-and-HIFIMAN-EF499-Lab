@@ -1,0 +1,85 @@
+$ sh -c for f in $(find ~/.config/pipewire ~/.config/wireplumber -type f | sort); do echo "===== $f"; cat "$f"; done
+===== /home/jglerner/.config/pipewire/pipewire.conf.d/10-rates.conf
+# Let the DAC follow the track's native rate (bit-perfect friendly)
+context.properties = {
+    default.clock.rate          = 44100
+    default.clock.allowed-rates = [ 44100 48000 88200 96000 176400 192000 352800 384000 ]
+}
+===== /home/jglerner/.config/pipewire/pipewire.conf.d/hd650-classical.conf.disabled
+context.modules = [
+    { name = libpipewire-module-filter-chain
+      args = {
+        node.description = "Sennheiser HD 650 Classical EQ"
+        media.name       = "Sennheiser HD 650 Classical EQ"
+        filter.graph = {
+            nodes = [
+                {
+                    type  = builtin
+                    name  = eq
+                    label = biquad
+                    control = {
+                        # Master Preamp to prevent clipping
+                        "Gain" = -3.5
+                        
+                        # Band 1: Low Shelf (80Hz, +3.5dB, Q 0.7)
+                        "Type" = "lowshelf" "Freq" = 80.0 "Gain" = 3.5 "Q" = 0.70
+                        
+                        # Band 2: Mid-Bass Cleanup
+                        "Type" = "peaking"  "Freq" = 150.0 "Gain" = -2.0 "Q" = 0.60
+                        
+                        # Band 3: Violin Glare Reduction
+                        "Type" = "peaking"  "Freq" = 3200.0 "Gain" = -1.5 "Q" = 3.00
+                        
+                        # Band 4: Piano & Harp Articulation
+                        "Type" = "peaking"  "Freq" = 5500.0 "Gain" = 1.5 "Q" = 2.00
+                        
+                        # Band 5: High Shelf for Concert Hall Air
+                        "Type" = "highshelf" "Freq" = 9000.0 "Gain" = 4.0 "Q" = 0.80
+                    }
+                }
+            ]
+        }
+        capture.props = {
+            node.name   = "effect_input.hd650_classical"
+            media.class = "Audio/Sink"
+        }
+        playback.props = {
+            node.name   = "effect_output.hd650_classical"
+            node.passive = true
+        }
+      }
+    }
+]
+===== /home/jglerner/.config/wireplumber/wireplumber.conf.d/51-output-priorities.conf
+# USB DACs: force analog profile, and stop WirePlumber from auto-switching to iec958
+monitor.alsa.rules = [
+  { matches = [ { device.name = "alsa_card.usb-FIIO_FiiO_K11_R2R-01" }
+                { device.name = "~alsa_card.usb-HIFIMAN-EF499.*" } ]
+    actions = { update-props = {
+        device.profile       = "output:analog-stereo"
+        api.acp.auto-profile = false
+        api.acp.auto-port    = false } } }
+
+  # Higher priority = preferred default output
+  { matches = [ { node.name = "~alsa_output.usb-FIIO_FiiO_K11_R2R.*" } ]
+    actions = { update-props = { priority.session = 2000 node.description = "FiiO K11 R2R (PO: ATH-R50x / LO: TOMATE)" } } }
+  { matches = [ { node.name = "~alsa_output.usb-HIFIMAN-EF499.*" } ]
+    actions = { update-props = { priority.session = 1900 node.description = "HIFIMAN EF499 (HD650)" } } }
+  { matches = [ { node.name = "~alsa_output.pci-0000_65_00.1.*" } ]
+    actions = { update-props = { priority.session = 100 node.description = "Monitor HDMI" } } }
+]
+===== /home/jglerner/.config/wireplumber/wireplumber.conf.d/disable-analog.conf
+monitor.alsa.rules = [
+  {
+    matches = [
+      {
+        device.name = "alsa_card.pci-0000_65_00.6"
+      }
+    ]
+    actions = {
+      update-props = {
+        device.disabled = true
+      }
+    }
+  }
+]

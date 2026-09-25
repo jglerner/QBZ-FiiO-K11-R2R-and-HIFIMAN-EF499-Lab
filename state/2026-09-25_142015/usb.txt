@@ -1,0 +1,15 @@
+$ lsusb
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 001 Device 002: ID 0c45:2283 Microdia UGREEN Camera
+Bus 001 Device 003: ID 8087:0032 Intel Corp. AX210 Bluetooth
+Bus 001 Device 006: ID 2fc6:f043 Comtrue Inc. HIFIMAN-EF499
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 003 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 003 Device 002: ID 1d6b:a4a7 Linux Foundation POROSVOC
+Bus 004 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 005 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 005 Device 002: ID 2109:0103 VIA Labs, Inc. USB 2.0 BILLBOARD
+Bus 006 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 007 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 007 Device 008: ID 2972:0099 FiiO Electronics Technology FiiO K11 R2R
+Bus 008 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub

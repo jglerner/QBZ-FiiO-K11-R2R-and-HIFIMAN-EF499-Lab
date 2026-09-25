@@ -1,0 +1,9 @@
+$ pw-link -l
+alsa_output.usb-HIFIMAN-EF499_HIFIMAN-EF499_SXW230918-00.analog-stereo:playback_FL
+  |<- ALSA plug-in [qbz]:output_FL
+alsa_output.usb-HIFIMAN-EF499_HIFIMAN-EF499_SXW230918-00.analog-stereo:playback_FR
+  |<- ALSA plug-in [qbz]:output_FR
+ALSA plug-in [qbz]:output_FL
+  |-> alsa_output.usb-HIFIMAN-EF499_HIFIMAN-EF499_SXW230918-00.analog-stereo:playback_FL
+ALSA plug-in [qbz]:output_FR
+  |-> alsa_output.usb-HIFIMAN-EF499_HIFIMAN-EF499_SXW230918-00.analog-stereo:playback_FR

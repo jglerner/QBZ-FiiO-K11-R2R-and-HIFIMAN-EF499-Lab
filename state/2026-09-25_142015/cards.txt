@@ -1,0 +1,16 @@
+$ sh -c pactl list cards | grep -E "Name:|alsa.card_name|Active Profile"
+	Name: alsa_card.pci-0000_65_00.1
+		alsa.card_name = "HD-Audio Generic"
+	Active Profile: output:hdmi-stereo-extra2
+	Name: alsa_card.usb-UGREEN_Camera_UGREEN_Camera_SN0001-02
+		alsa.card_name = "UGREEN Camera"
+	Active Profile: input:analog-stereo
+	Name: alsa_card.usb-POROSVOC_POROSVOC_PNC201_4MIC-00
+		alsa.card_name = "POROSVOC"
+	Active Profile: input:mono-fallback
+	Name: alsa_card.usb-FIIO_FiiO_K11_R2R-01
+		alsa.card_name = "FiiO K11 R2R"
+	Active Profile: output:analog-stereo
+	Name: alsa_card.usb-HIFIMAN-EF499_HIFIMAN-EF499_SXW230918-00
+		alsa.card_name = "HIFIMAN-EF499"
+	Active Profile: output:analog-stereo

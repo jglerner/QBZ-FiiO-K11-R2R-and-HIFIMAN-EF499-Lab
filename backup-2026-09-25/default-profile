@@ -1,0 +1,6 @@
+[default-profile]
+alsa_card.usb-FIIO_FiiO_K11_R2R-01=output:analog-stereo
+alsa_card.usb-Generic_Baseus_USB_Audio_20210726905926-00=output:analog-stereo+input:analog-stereo
+alsa_card.usb-HIFIMAN-EF499_HIFIMAN-EF499_SXW230918-00=output:iec958-stereo
+alsa_card.usb-TTGK_Technology_USB-C_Audio-00=output:analog-stereo
+alsa_card.usb-UGREEN_Camera_UGREEN_Camera_SN0001-02=input:analog-stereo

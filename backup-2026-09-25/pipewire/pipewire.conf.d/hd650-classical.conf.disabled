@@ -1,0 +1,44 @@
+context.modules = [
+    { name = libpipewire-module-filter-chain
+      args = {
+        node.description = "Sennheiser HD 650 Classical EQ"
+        media.name       = "Sennheiser HD 650 Classical EQ"
+        filter.graph = {
+            nodes = [
+                {
+                    type  = builtin
+                    name  = eq
+                    label = biquad
+                    control = {
+                        # Master Preamp to prevent clipping
+                        "Gain" = -3.5
+                        
+                        # Band 1: Low Shelf (80Hz, +3.5dB, Q 0.7)
+                        "Type" = "lowshelf" "Freq" = 80.0 "Gain" = 3.5 "Q" = 0.70
+                        
+                        # Band 2: Mid-Bass Cleanup
+                        "Type" = "peaking"  "Freq" = 150.0 "Gain" = -2.0 "Q" = 0.60
+                        
+                        # Band 3: Violin Glare Reduction
+                        "Type" = "peaking"  "Freq" = 3200.0 "Gain" = -1.5 "Q" = 3.00
+                        
+                        # Band 4: Piano & Harp Articulation
+                        "Type" = "peaking"  "Freq" = 5500.0 "Gain" = 1.5 "Q" = 2.00
+                        
+                        # Band 5: High Shelf for Concert Hall Air
+                        "Type" = "highshelf" "Freq" = 9000.0 "Gain" = 4.0 "Q" = 0.80
+                    }
+                }
+            ]
+        }
+        capture.props = {
+            node.name   = "effect_input.hd650_classical"
+            media.class = "Audio/Sink"
+        }
+        playback.props = {
+            node.name   = "effect_output.hd650_classical"
+            node.passive = true
+        }
+      }
+    }
+]

@@ -1,0 +1,35 @@
+Snapshot 2026-09-25_142015
+
+## Sinks
+$ pactl list short sinks
+57	alsa_output.pci-0000_65_00.1.hdmi-stereo-extra2	PipeWire	s32le 2ch 44100Hz	SUSPENDED
+259	alsa_output.usb-FIIO_FiiO_K11_R2R-01.analog-stereo	PipeWire	s32le 2ch 44100Hz	SUSPENDED
+322	alsa_output.usb-HIFIMAN-EF499_HIFIMAN-EF499_SXW230918-00.analog-stereo	PipeWire	s32le 2ch 192000Hz	RUNNING
+
+## Default
+alsa_output.usb-HIFIMAN-EF499_HIFIMAN-EF499_SXW230918-00.analog-stereo
+
+## Streams
+$ sh -c pactl list sink-inputs | grep -E "Sink Input|Sink:|application.name|Sample Specification"
+Sink Input #542
+	Sink: 322
+	Sample Specification: float32le 2ch 192000Hz
+		application.name = "ALSA plug-in [qbz]"
+		module-stream-restore.id = "sink-input-by-application-name:ALSA plug-in [qbz]"
+
+## Monitors
+$ sh -c pactl list source-outputs | grep -E "Source Output|Source:|application.name"
+
+## DAC HIFIMANEF499
+format: S32_LE
+subformat: STD
+rate: 192000 (192000/1)
+owner_pid   : 22443
+== owner: 22443 pipewire
+
+## DAC R2R
+closed
+closed
+
+## Config drift (repo vs live)
+Only in /home/jglerner/.config/pipewire/pipewire.conf.d: hd650-classical.conf.disabled

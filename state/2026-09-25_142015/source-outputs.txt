@@ -1,0 +1,1 @@
+$ sh -c pactl list source-outputs | grep -E "Source Output|Source:|application.name"

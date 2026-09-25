@@ -1,0 +1,8 @@
+$ ls -la /home/jglerner/.local/state/wireplumber
+total 28
+drwx------ 2 jglerner jglerner 4096 set 25 14:07 .
+drwx------ 7 jglerner jglerner 4096 set 22 14:29 ..
+-rw-rw-r-- 1 jglerner jglerner 1287 set 25 12:50 default-nodes
+-rw-rw-r-- 1 jglerner jglerner   94 set 25 12:50 default-profile
+-rw-rw-r-- 1 jglerner jglerner 3754 set 25 13:21 default-routes
+-rw-rw-r-- 1 jglerner jglerner 4612 set 25 14:07 stream-properties

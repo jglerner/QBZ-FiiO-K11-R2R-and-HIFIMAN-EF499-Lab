@@ -1,0 +1,2 @@
+$ flatpak ps
+1859896511	36232	com.blitzfc.qbz	org.kde.Platform

@@ -1,0 +1,61 @@
+$ sh -c ls -la ~/.config/easyeffects/output ~/.config/easyeffects/irs 2>&1
+/home/jglerner/.config/easyeffects/irs:
+total 95300
+drwxrwxr-x 2 jglerner jglerner     4096 ago 18 00:12 .
+drwxrwxr-x 7 jglerner jglerner     4096 ago 10 11:32 ..
+-rw-rw-r-- 1 jglerner jglerner   161636 ago 18 00:12 20260818.irs
+-rw-rw-r-- 1 jglerner jglerner    65580 ago 18 14:13 Accudio ((48kHz Z.E.)) Earpods HIFI.irs
+-rw-rw-r-- 1 jglerner jglerner    65580 ago 18 14:13 Accudio ((48kHz Z.E.)) MDR-E9LP HIFI.irs
+-rw-rw-r-- 1 jglerner jglerner    65580 ago 18 14:13 Accudio ((48kHz Z.E.)) MDR-E9LP SM beyerT1.irs
+-rw-rw-r-- 1 jglerner jglerner    65580 ago 18 14:13 Accudio ((48kHz Z.E.)) MDR-E9LP SM SRH940.irs
+-rw-rw-r-- 1 jglerner jglerner    65580 ago 18 14:13 Accudio ((48kHz Z.E.)) MDR-E9LP SM XBA3.irs
+-rw-rw-r-- 1 jglerner jglerner    65580 ago 18 14:13 Accudio ((48kHz Z.E.)) MDR-XB500 HIFI.irs
+-rw-rw-r-- 1 jglerner jglerner    65580 ago 18 14:13 Accudio ((48kHz Z.E.)) XBA-H3 HIFI.irs
+-rw-rw-r-- 1 jglerner jglerner    65580 ago 18 14:13 Accudio ((48kHz Z.E.)) XBA-H3 SM beyerT1.irs
+-rw-rw-r-- 1 jglerner jglerner    65580 ago 18 14:13 Accudio ((48kHz Z.E.)) XBA-H3 SM SRH940.irs
+-rw-rw-r-- 1 jglerner jglerner    65580 ago 18 14:13 Accudio ((48kHz Z.E.)) XBA-H3 SM XBA4.irs
+-rw-rw-r-- 1 jglerner jglerner    65580 ago 18 14:13 Creative X-Fi ((Z-Edition)) Crystalizer 10 + Expand 10.irs
+-rw-rw-r-- 1 jglerner jglerner    41516 ago 18 14:13 Dolby ATMOS ((128K MP3)) 1.Default.irs
+-rw-rw-r-- 1 jglerner jglerner    65580 ago 18 14:13 HTC Beats Audio ((Z-Edition)).irs
+-rw-rw-r-- 1 jglerner jglerner    32812 ago 18 14:13 MaxxAudio Pro ((128K MP3)) 4.Music w MaxxSpace.irs
+-rw-rw-r-- 1 jglerner jglerner    22100 ago 18 14:13 MaxxAudio Pro ((128K MP3)) 4.Music w MaxxSpace Low Latency.irs
+-rw-rw-r-- 1 jglerner jglerner 96127934 ago 17 20:10 METLMvmt_WTMG_RK_Large Metal Gate 01_Medium to strong tonal fluttering winds, fast resonant vibrations, dry knocks, metallic taps, buzzing, distant squeaks_LOOP 01.irs
+-rw-rw-r-- 1 jglerner jglerner    24044 ago 18 14:13 Razor Surround ((48k Z-Edition)) 1.Stereo +0 Bass Low Latency.irs
+-rw-rw-r-- 1 jglerner jglerner    71372 ago 18 14:13 Razor Surround ((48k Z-Edition)) 2.Stereo +20 bass.irs
+-rw-rw-r-- 1 jglerner jglerner    24044 ago 18 14:13 Razor Surround ((48k Z-Edition)) 2.Stereo +20 bass Low Latency.irs
+-rw-rw-r-- 1 jglerner jglerner    24044 ago 18 14:13 Razor Surround ((48k Z-Edition)) 3.Stereo +30 Bass Low Latency.irs
+-rw-rw-r-- 1 jglerner jglerner    24044 ago 18 14:13 Razor Surround ((48k Z-Edition)) 4.Stereo +50 Bass Low Latency.irs
+-rw-rw-r-- 1 jglerner jglerner    24044 ago 18 14:13 Razor Surround ((48k Z-Edition)) 5.Stereo +70 Bass Low Latency.irs
+-rw-rw-r-- 1 jglerner jglerner    24044 ago 18 14:13 Razor Surround ((48k Z-Edition)) 6.Stereo +80 Bass Low Latency.irs
+-rw-rw-r-- 1 jglerner jglerner    24044 ago 18 14:13 Razor Surround ((48k Z-Edition)) 7.Stereo +100 Bass Low Latency.irs
+-rw-rw-r-- 1 jglerner jglerner    65580 ago 18 14:13 Waves MaxxAudio ((Z-Edition)) AudioWizard 1.Music.irs
+-rw-rw-r-- 1 jglerner jglerner    22100 ago 18 14:13 Waves MaxxAudio ((Z-Edition)) AudioWizard 1.Music Low Latency.irs
+
+/home/jglerner/.config/easyeffects/output:
+total 356
+drwxrwxr-x 2 jglerner jglerner  4096 ago 28 12:14 .
+drwxrwxr-x 7 jglerner jglerner  4096 ago 10 11:32 ..
+-rw-rw-r-- 1 jglerner jglerner 22602 ago 18 14:13 Advanced Auto Gain.json
+-rw-rw-r-- 1 jglerner jglerner 19788 jun 28 16:05 analog-max.json
+-rw-rw-r-- 1 jglerner jglerner  7807 ago 28 12:14 ath.json
+-rw-rw-r-- 1 jglerner jglerner  4208 ago 19 17:18 ATH-M50x-Classical-v1.json
+-rw-rw-r-- 1 jglerner jglerner  7796 ago 13 15:34 Audio-Technica ATH-AD500X.json
+-rw-rw-r-- 1 jglerner jglerner  8135 ago 18 14:13 Bass Boosted.json
+-rw-rw-r-- 1 jglerner jglerner  7489 ago 18 14:13 Bass Enhancing + Perfect EQ.json
+-rw-rw-r-- 1 jglerner jglerner  9441 ago 18 14:13 Bass Enhancing + Perfect EQ - Low Latency.json
+-rw-rw-r-- 1 jglerner jglerner  7796 ago 13 15:40 Blank.json
+-rw-rw-r-- 1 jglerner jglerner  7253 ago 18 14:13 Boosted.json
+-rw-rw-r-- 1 jglerner jglerner 21643 jun 28 16:05 classical-max.json
+-rw-rw-r-- 1 jglerner jglerner 21630 jun 28 16:05 classical-min.json
+-rw-rw-r-- 1 jglerner jglerner  9251 ago 18 14:13 Dolby Atmos.json
+-rw-rw-r-- 1 jglerner jglerner  2315 ago 10 11:53 DT770Pro80Ohm.json
+-rw-rw-r-- 1 jglerner jglerner 22393 jun 28 16:05 edm-max.json
+-rw-rw-r-- 1 jglerner jglerner 22380 jun 28 16:05 edm-min.json
+-rw-rw-r-- 1 jglerner jglerner  4229 ago 18 12:15 HD650_Classical_v1.json
+-rw-rw-r-- 1 jglerner jglerner 22393 jun 28 16:05 hifi-max.json
+-rw-rw-r-- 1 jglerner jglerner 22380 jun 28 16:05 hifi-min.json
+-rw-rw-r-- 1 jglerner jglerner 20812 ago 18 14:13 Laptop.json
+-rw-rw-r-- 1 jglerner jglerner 22505 ago 18 14:13 Loudness+Autogain.json
+-rw-rw-r-- 1 jglerner jglerner  7257 ago 18 14:13 Perfect EQ.json
+-rw-rw-r-- 1 jglerner jglerner  2314 ago 10 14:52 Sennheiser_HD650.json
+-rw-rw-r-- 1 jglerner jglerner  5431 ago 18 14:13 Speaker Sync.json

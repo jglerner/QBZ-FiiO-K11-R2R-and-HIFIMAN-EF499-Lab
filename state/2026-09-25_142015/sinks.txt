@@ -1,0 +1,4 @@
+$ pactl list short sinks
+57	alsa_output.pci-0000_65_00.1.hdmi-stereo-extra2	PipeWire	s32le 2ch 44100Hz	SUSPENDED
+259	alsa_output.usb-FIIO_FiiO_K11_R2R-01.analog-stereo	PipeWire	s32le 2ch 44100Hz	SUSPENDED
+322	alsa_output.usb-HIFIMAN-EF499_HIFIMAN-EF499_SXW230918-00.analog-stereo	PipeWire	s32le 2ch 192000Hz	RUNNING

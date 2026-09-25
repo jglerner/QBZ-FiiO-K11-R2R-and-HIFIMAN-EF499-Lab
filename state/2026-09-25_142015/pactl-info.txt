@@ -1,0 +1,16 @@
+$ pactl info
+Server String: /run/user/1000/pulse/native
+Library Protocol Version: 35
+Server Protocol Version: 35
+Is Local: yes
+Client Index: 547
+Tile Size: 65472
+User Name: jglerner
+Host Name: trixie
+Server Name: PulseAudio (on PipeWire 1.4.2)
+Server Version: 15.0.0
+Default Sample Specification: float32le 2ch 44100Hz
+Default Channel Map: front-left,front-right
+Default Sink: alsa_output.usb-HIFIMAN-EF499_HIFIMAN-EF499_SXW230918-00.analog-stereo
+Default Source: alsa_input.usb-UGREEN_Camera_UGREEN_Camera_SN0001-02.analog-stereo
+Cookie: f8e3:31df

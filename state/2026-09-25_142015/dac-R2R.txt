@@ -1,0 +1,4 @@
+== /proc/asound/R2R/pcm0p/sub0/hw_params
+closed
+== /proc/asound/R2R/pcm0p/sub0/status
+closed

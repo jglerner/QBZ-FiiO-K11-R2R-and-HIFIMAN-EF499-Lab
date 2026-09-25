@@ -1,0 +1,19 @@
+$ sh -c pactl list sinks | grep -E "Name:|Description:|State:|Sample Specification:|Mute:|Volume: front"
+	State: SUSPENDED
+	Name: alsa_output.pci-0000_65_00.1.hdmi-stereo-extra2
+	Description: Monitor HDMI
+	Sample Specification: s32le 2ch 44100Hz
+	Mute: no
+	Volume: front-left: 65536 / 100% / 0,00 dB,   front-right: 65536 / 100% / 0,00 dB
+	State: SUSPENDED
+	Name: alsa_output.usb-FIIO_FiiO_K11_R2R-01.analog-stereo
+	Description: FiiO K11 R2R (PO: ATH-R50x / LO: TOMATE)
+	Sample Specification: s32le 2ch 44100Hz
+	Mute: no
+	Volume: front-left: 65536 / 100% / 0,00 dB,   front-right: 65536 / 100% / 0,00 dB
+	State: RUNNING
+	Name: alsa_output.usb-HIFIMAN-EF499_HIFIMAN-EF499_SXW230918-00.analog-stereo
+	Description: HIFIMAN EF499 (HD650)
+	Sample Specification: s32le 2ch 192000Hz
+	Mute: no
+	Volume: front-left: 65536 / 100% / 0,00 dB,   front-right: 65536 / 100% / 0,00 dB

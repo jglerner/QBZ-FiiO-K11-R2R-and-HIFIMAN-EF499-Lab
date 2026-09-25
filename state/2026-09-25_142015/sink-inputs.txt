@@ -1,0 +1,6 @@
+$ sh -c pactl list sink-inputs | grep -E "Sink Input|Sink:|application.name|Sample Specification"
+Sink Input #542
+	Sink: 322
+	Sample Specification: float32le 2ch 192000Hz
+		application.name = "ALSA plug-in [qbz]"
+		module-stream-restore.id = "sink-input-by-application-name:ALSA plug-in [qbz]"

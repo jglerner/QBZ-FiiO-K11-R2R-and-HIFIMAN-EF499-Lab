@@ -1,0 +1,13 @@
+2026-09-25 14:06:50.559 INFO  qbz::font_qt [qbz-qt] font fallback -> LINE Seed JP (Han/Hiragana/Katakana)
+2026-09-25 14:06:50.559 INFO  qbz::font_qt [qbz-qt] font fallback -> Noto Sans Devanagari
+2026-09-25 14:06:54.143 WARN  qbz_media_controls::inhibit [inhibit] system bus unavailable, cannot inhibit sleep (retry in 300s): Failed to connect to address `unix:path=/var/run/dbus/system_bus_socket`: No such file or directory (os error 2)
+2026-09-25 14:06:54.148 INFO  qbz_audio::alsa_error_handler [ALSA] Custom error handler installed (routes to log::debug)
+2026-09-25 14:06:59.984 INFO  qbz_player::player Using backend system: Alsa (device: Some("front:CARD=HIFIMANEF499,DEV=0"), plugin: Some(Pcm))
+2026-09-25 14:07:00.003 INFO  qbz_player::player Detected hw: device, using ALSA Direct for bit-perfect playback
+2026-09-25 14:07:00.003 INFO  qbz_audio::alsa_backend [ALSA Backend] PCM mode selected, not using direct ALSA
+2026-09-25 14:07:00.003 INFO  qbz_audio::alsa_backend [ALSA Backend] Creating stream: 192000Hz, 2 channels, exclusive: false, plugin: Some(Pcm)
+2026-09-25 14:07:00.016 WARN  qbz_audio::alsa_backend [ALSA Backend] 'front:CARD=HIFIMANEF499,DEV=0' not resolvable by ALSA (alias likely missing in asound.conf); trying fallback 'hw:CARD=HIFIMANEF499,DEV=0'
+2026-09-25 14:07:00.029 ERROR qbz_player::player Backend stream creation failed: Device 'front:CARD=HIFIMANEF499,DEV=0' is present in /proc/asound but CPAL cannot open it (usually a sample-rate/format mismatch — track rate 192000Hz, or an ALSA name format mismatch). Try the plughw plugin in audio settings.
+2026-09-25 14:07:00.029 WARN  qbz_player::player Backend system init failed for streaming: Device 'front:CARD=HIFIMANEF499,DEV=0' is present in /proc/asound but CPAL cannot open it (usually a sample-rate/format mismatch — track rate 192000Hz, or an ALSA name format mismatch). Try the plughw plugin in audio settings., falling back to legacy
+2026-09-25 14:07:00.040 INFO  qbz_player::player Creating MixerDeviceSink: 192000Hz, 2 channels, exclusive: false
+2026-09-25 14:15:36.130 WARN  qbz_media_controls::inhibit [inhibit] system bus unavailable, cannot inhibit sleep (retry in 300s): Failed to connect to address `unix:path=/var/run/dbus/system_bus_socket`: No such file or directory (os error 2)

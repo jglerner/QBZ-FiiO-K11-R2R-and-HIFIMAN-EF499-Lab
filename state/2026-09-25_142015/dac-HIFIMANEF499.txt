@@ -1,0 +1,20 @@
+== /proc/asound/HIFIMANEF499/pcm0p/sub0/hw_params
+access: MMAP_INTERLEAVED
+format: S32_LE
+subformat: STD
+channels: 2
+rate: 192000 (192000/1)
+period_size: 2048
+buffer_size: 32768
+== /proc/asound/HIFIMANEF499/pcm0p/sub0/status
+state: RUNNING
+owner_pid   : 22443
+trigger_time: 9246.733397807
+tstamp      : 10042.422120576
+delay       : 17787
+avail       : 16877
+avail_max   : 22551
+-----
+hw_ptr      : 152775149
+appl_ptr    : 152791040
+== owner: 22443 pipewire

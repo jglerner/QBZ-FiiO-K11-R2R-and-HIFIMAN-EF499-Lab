@@ -1,0 +1,1 @@
+Only in /home/jglerner/.config/pipewire/pipewire.conf.d: hd650-classical.conf.disabled

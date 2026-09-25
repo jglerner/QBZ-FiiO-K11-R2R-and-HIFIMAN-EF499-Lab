@@ -1,0 +1,4 @@
+$ sh -c journalctl --user -b --no-pager | grep -iE "wireplumber|pipewire" | grep -iE "error|warn" | tail -40
+set 25 11:32:46 trixie wireplumber[2539]: [0:00:14.667207770] [2819] ERROR DmaBufAllocator dma_buf_allocator.cpp:119 Could not open any dma-buf provider
+set 25 11:32:50 trixie wireplumber[3353]: [0:00:18.401560586] [3371] ERROR DmaBufAllocator dma_buf_allocator.cpp:119 Could not open any dma-buf provider
+set 25 11:35:59 trixie xdg-desktop-por[4141]: Caught PipeWire error: connection error
